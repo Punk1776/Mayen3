@@ -1,0 +1,82 @@
+.home {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .headerContainer {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(10, 0, 0);
+  }
+  
+  .headerContainer h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .headerContainer p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+  .headerContainer2 {
+   flex: 1;
+   display: flex;
+   align-items: center; /* Aligns the items vertically in the center */
+   justify-content: space-between; /* Keeps space between the text and image */
+   padding: 50px 20px;
+   color: #333;
+   flex-direction: row;
+   max-width: 1200px;
+  }
+  .imageContainer { 
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20%;
+    padding-bottom: 5%;
+   
+  }
+  
+  .callNowButton {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+  }
+  
+  .callNowButton:hover {
+    background-color: #e64a19;
+  }
+  @media only screen and (max-width: 768px) {
+    .contentContainer {
+      flex-direction: column; /* Stacks text and image vertically */
+      text-align: center; /* Centers text */
+    }
+  
+    .textContent, .imageContent {
+      padding: 20px 0;
+    }
+  
+    .imageContent {
+      padding-top: 20px 0; /* Adds spacing above the image when stacked */
+    }
+  }

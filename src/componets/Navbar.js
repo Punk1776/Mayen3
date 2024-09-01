@@ -16,20 +16,22 @@ const toggleNavbar = () => {
     <div className="navbar">
         <div className="leftSide" id={openLinks ? "open" : "closed"}>
         <img src={Logo} alt="Mayen HVAC Logo" />
-        <div className="hiddenLinks"></div>
+        <div className="hiddenLinks">
         <Link to="/"> Home </Link>
-        <Link to="/Services"> Services </Link>
+        <Link to="/Services"> services </Link>
         <Link to="/about"> about </Link>
         <Link to="/contact"> contact </Link>
+          </div>
         </div>
-        <div className="rightSide"></div>
+        <div className="rightSide">
         <Link to="/"> Home </Link>
-        <Link to="/Services"> Services </Link>
+        <Link to="/Services"> services </Link>
         <Link to="/about"> about </Link>
         <Link to="/contact"> contact </Link>
-        <button onClick={toggleNavbar}>
+        <button onClick={toggleNavbar} aria-label="Toggle navigation">
         <ReorderIcon />
         </button>
+        </div>
     </div>
   )
 }
